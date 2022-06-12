@@ -1,0 +1,45 @@
+@import 'variables';
+
+.todo__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &-input,
+  &-text,
+  &-select {
+    width: 100%;
+    resize: none;
+    background-color: $color-gray;
+    padding: 11px 20px;
+  }
+
+  &-input:focus,
+  &-text:focus,
+  &-select:focus {
+    box-shadow: $box-shadow-main;
+  }
+
+  &-text,
+  &-select {
+    margin-top: 7px;
+  }
+
+  &-text {
+    min-height: 130px;
+  }
+
+  &-btn {
+    align-self: flex-start;
+    margin-top: 20px;
+    padding: 11px 25px;
+    min-height: 35px;
+    background-color: $color-blue;
+    color: $color-main;
+
+    &:hover {
+      box-shadow: $box-shadow-main;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import 'variables';
+
+.todo {
+  max-width: 500px;
+  margin: 0 auto;
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: $color-blue;
+
+    &-btn {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: auto;
+      height: 100%;
+      font-family: $font-family-main;
+      font-size: $font-size-main;
+      font-weight: $font-weight-bold;
+      background-color: transparent;
+      color: $color-main;
+      text-transform: uppercase;
+
+      &:hover::after,
+      &.active::after {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 7px;
+        background-color: $color-dark-blue;
+      }
+    }
+  }
+}

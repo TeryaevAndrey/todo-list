@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'todo-tabs';
+@import 'todo-content';
+@import 'todo-form';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $font-family-main;
+  font-size: $font-size-main;
+  font-weight: $font-weight-regular;
+  line-height: 1;
+  color: $color-main;
+}
+
+.app {
+  padding: 0 30px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button,
+input,
+textarea,
+select {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
