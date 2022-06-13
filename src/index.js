@@ -1,4 +1,6 @@
 import './scss/main.scss';
-import formValidation from "./scripts/form_validation";
+import {formValidation} from "./scripts/form_validation";
 
-formValidation();
+const todoForm = document.getElementById('todoForm');
+
+todoForm.addEventListener('submit', formValidation);
