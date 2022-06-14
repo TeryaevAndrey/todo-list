@@ -11,6 +11,10 @@
     min-height: 150px;
     padding: 10px 20px;
 
+    &:not(:first-child) {
+      margin-top: 14px;
+    }
+
     &-name {
       position: relative;
       font-size: $font-size-main;
@@ -44,10 +48,15 @@
     }
 
     &-content {
-      margin-top: 7px;
+      margin-top: 15px;
     }
 
-    &-data-time {
+    &-text {
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+
+    &-date-time {
       display: flex;
       align-items: center;
       position: absolute;
@@ -55,7 +64,7 @@
       bottom: 7px;
     }
 
-    &-data {
+    &-date {
       margin-right: 5px;
     }
   }

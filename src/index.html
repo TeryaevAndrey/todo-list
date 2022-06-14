@@ -18,29 +18,17 @@
             <div class="todo__content">
                 <form class="todo__form todo__content-item" id="todoForm" action="">
                     <div class="error-text"></div>
-                    <input class="todo__form-input validation" type="text" placeholder="Введите название">
+                    <input class="todo__form-input validation" name="name" type="text" placeholder="Введите название">
                     <div class="error-text"></div>
-                    <textarea class="todo__form-text validation" placeholder="Заметка"></textarea>
+                    <textarea class="todo__form-text validation" name="text" placeholder="Заметка"></textarea>
                     <select class="todo__form-select">
-                        <option class="todo__form-option" value="note">Заметка</option>
-                        <option class="todo__form-option" value="news">Новость</option>
-                        <option class="todo__form-option" value="diary">Дневник</option>
+                        <option class="todo__form-option">Заметка</option>
+                        <option class="todo__form-option">Новость</option>
+                        <option class="todo__form-option">Дневник</option>
                     </select>
                     <button class="todo__form-btn" type="submit">Сохранить</button>
                 </form>
-                <div class="todo__list todo__content-item" id="todoList">
-                    <div class="todo__item">
-                        <h2 class="todo__item-name">Заметка</h2>
-                        <div class="todo__item-option">Новость</div>
-                        <div class="todo__item-content">
-                            <p class="todo__item-text">Контент заметки</p>
-                        </div>
-                        <div class="todo__item-data-time">
-                            <p class="todo__item-data">12.12.2000</p>
-                            <p class="todo__item-time">20:15</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="todo__list todo__content-item" id="todoList"></div>
             </div>
         </div>
     </div>

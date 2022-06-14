@@ -1,0 +1,41 @@
+export const sendForm = () => {
+    const todoList = document.getElementById('todoList');
+    const todoFormName = document.querySelector('.todo__form-input').value;
+    const todoFormText = document.querySelector('.todo__form-text').value;
+    const todoFormSelect = document.querySelector('.todo__form-select').value;
+
+    let todoItemHTML = `
+                    <div class="todo__item">
+                        <h2 class="todo__item-name">${todoFormName}</h2>
+                        <div class="todo__item-option">${todoFormSelect}</div>
+                        <div class="todo__item-content">
+                            <p class="todo__item-text" contenteditable="false">${todoFormText}</p>
+                        </div>
+                        <div class="todo__item-date-time">
+                            <p class="todo__item-date">${getDate()}</p>
+                            <p class="todo__item-time">${getTime()}</p>
+                        </div>
+                    </div>
+    `;
+
+    todoList.insertAdjacentHTML('beforeend', todoItemHTML);
+
+    alert('Успешно');
+
+    return localStorage.setItem('todoItems', todoList.innerHTML);
+}
+
+const getDate = () => {
+    return new Date().toLocaleDateString();
+}
+
+const getTime = () => {
+    const dateNow = new Date();
+
+    const dateInfo = {
+        hours: dateNow.getHours(),
+        minutes: dateNow.getMinutes()
+    };
+
+    return `${dateInfo.hours}:${dateInfo.minutes}`;
+}
