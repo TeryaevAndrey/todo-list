@@ -34,9 +34,18 @@ const getTime = () => {
     const dateNow = new Date();
 
     const dateInfo = {
-        hours: dateNow.getHours(),
-        minutes: dateNow.getMinutes()
+        hours: String(dateNow.getHours()),
+        minutes: String(dateNow.getMinutes())
     };
+
+    if(dateInfo.hours.length === 1) {
+        dateInfo.hours = '0' + dateInfo.hours;
+    }
+
+    if(dateInfo.minutes.length === 1) {
+        dateInfo.minutes = '0' + dateInfo.minutes;
+    }
 
     return `${dateInfo.hours}:${dateInfo.minutes}`;
 }
+

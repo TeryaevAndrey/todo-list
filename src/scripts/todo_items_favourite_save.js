@@ -1,5 +1,5 @@
 export const saveTodoFavouriteItems = () => {
-    const todoListFavourite = document.querySelector('.todo__list-favourite');
+    const todoListFavourite = document.getElementById('favourite');
 
     return todoListFavourite.innerHTML = localStorage.getItem('favouriteItems');
 }
