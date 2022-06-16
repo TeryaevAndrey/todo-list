@@ -21,6 +21,8 @@ export const sendForm = () => {
 
     todoList.insertAdjacentHTML('beforeend', todoItemHTML);
 
+    location.reload();
+
     alert('Успешно');
 
     return localStorage.setItem('todoItems', todoList.innerHTML);
