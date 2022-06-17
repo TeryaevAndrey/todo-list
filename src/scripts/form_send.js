@@ -12,6 +12,7 @@ export const sendForm = () => {
                             <p class="todo__item-text">${todoFormText}</p>
                         </div>
                         <a class="todo__item-favourite" href="#">Добавить в избранное</a>
+                        <a class="todo__item-delete" href="#">Удалить заметку</a>
                         <div class="todo__item-date-time">
                             <p class="todo__item-date">${getDate()}</p>
                             <p class="todo__item-time">${getTime()}</p>
