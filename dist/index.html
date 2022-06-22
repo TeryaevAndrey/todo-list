@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO-list</title>
+<script defer src="bundle.js"></script></head>
+<body>
+    <div class="app" id="app">
+        <div class="todo">
+            <div class="todo__tabs">
+                <button class="todo__tabs-button" data-tab="write">Написать заметку</button>
+                <button class="todo__tabs-button" data-tab="list">Мои заметки</button>
+                <button class="todo__tabs-button" data-tab="favourite">Избранное</button>
+            </div>
+            <div class="todo__content">
+                <form class="todo__form" action="">
+                    <input class="todo__form-input" type="text" placeholder="Введите название">
+                    <textarea class="todo__form-text" placeholder="Заметка"></textarea>
+                    <select class="todo__form-select">
+                        <option class="todo__form-option" value="note">Заметка</option>
+                        <option class="todo__form-option" value="news">Новость</option>
+                        <option class="todo__form-option" value="diary">Дневник</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

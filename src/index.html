@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO-list</title>
+</head>
+<body>
+    <div class="app" id="app">
+        <div class="todo">
+            <div class="todo__tabs">
+                <button class="todo__tabs-btn active" data-tab="todoForm">Новая заметка</button>
+                <button class="todo__tabs-btn" data-tab="todoList">Мои заметки</button>
+                <button class="todo__tabs-btn" data-tab="favourite">Избранное</button>
+            </div>
+            <div class="todo__content">
+                <form class="todo__form todo__content-item" id="todoForm" action="">
+                    <div class="error-text"></div>
+                    <input class="todo__form-input validation" name="name" type="text" placeholder="Введите название">
+                    <div class="error-text"></div>
+                    <textarea class="todo__form-text validation" name="text" placeholder="Заметка"></textarea>
+                    <select class="todo__form-select">
+                        <option class="todo__form-option">Заметка</option>
+                        <option class="todo__form-option">Новость</option>
+                        <option class="todo__form-option">Дневник</option>
+                        <option class="todo__form-option">Список дел</option>
+                    </select>
+                    <button class="todo__form-btn" type="submit">Сохранить</button>
+                </form>
+                <div class="todo__list todo__content-item" id="todoList"></div>
+                <div class="todo__list-favourite todo__content-item" id="favourite"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
