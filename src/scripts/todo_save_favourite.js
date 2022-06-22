@@ -7,5 +7,7 @@ export const saveTodoFavourite = (event) => {
 
     alert('Успешно!');
 
-    return localStorage.setItem('favouriteItems', todoListFavourite.innerHTML);
+    localStorage.setItem('favouriteItems', todoListFavourite.innerHTML);
+
+    location.reload();
 }
